@@ -1,0 +1,57 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.layout {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.other,
+.poster {
+  width: 100%;
+}
+
+.poster {
+  min-height: 40vh;
+}
+
+.other {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 80%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 12px 24px #644c6114;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  background: var(--primary, #fff);
+  color: var(--color, #000);
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .other,
+  .poster {
+    width: 50%;
+    height: 100vh;
+  }
+}

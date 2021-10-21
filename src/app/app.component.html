@@ -1,0 +1,22 @@
+<div
+  class="layout"
+  *ngIf="org$ | async as org"
+  style="--primary: {{ org.primary }}; --color: {{ org.color }}"
+>
+  <div
+    class="poster"
+    style="background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 45.83%,rgba(0,0,0,.8) 100%),center/cover no-repeat url('https://cdn.pixabay.com/photo/2021/10/07/07/34/woman-6687637_960_720.jpg')"
+  ></div>
+  <div class="other">
+    <div class="mb-3 row">
+      <div class="col-sm-10">
+        <pre>
+          {{ org | json }}
+        </pre>
+      </div>
+      <div>
+        <button>submit</button>
+      </div>
+    </div>
+  </div>
+</div>
